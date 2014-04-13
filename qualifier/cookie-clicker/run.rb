@@ -13,10 +13,9 @@ test_cases.times do |t|
 
     if !best_case_goal.nil? && best_case_goal <= best_case_farm + sec_from_goal
       break
-    else
-      best_case_goal = best_case_farm + sec_from_goal
     end
 
+    best_case_goal = best_case_farm + sec_from_goal
     best_case_farm += sec_from_farm
     cookies_per_sec += farm_cookies_per_sec
   end
